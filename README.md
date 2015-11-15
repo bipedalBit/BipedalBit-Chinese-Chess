@@ -3,5 +3,5 @@
 &nbsp;&nbsp;&nbsp; For being new in man-machine game field, I chose widely used and traditional algorithms as the engine of my chinese chess game. For now there are only two searching algorithms used in my game which are classical Alpha-Beta algorithm and one little newer algorithm called MTD(f).<br>
 &nbsp;&nbsp;&nbsp; As for the evaluating method of my game, I had to make a compromise. As I know, advanced evaluating methods such as nerual network optimized ones and genetic algorithm optimized ones, even simple board-statement database enhanced ones all need plenty gaming data. And I have not enough spare time to collect those data. So I just picked up an old, knowledge-based, non-adaptive evaluating algorithm.<br>
 &nbsp;&nbsp;&nbsp; Of course I heard about the strong Monte Carlo method. And I do know how great success it made in computer Go field. But I'm not sure if it is enough to do a lot of concurrent compute with my personal laptop by hand only. <br>
-I'm going to make my searching core history spired optimized in next version. And the parallel movement generator may also be implemented then.<br>
+&nbsp;&nbsp;&nbsp; I'm going to make my searching core history spired optimized in next version. And the parallel movement generator may also be implemented then.<br>
 &nbsp;&nbsp;&nbsp; Have a try on MC-UCT? Maybe next year.
