@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/B_CANNON.png</file>
+        <file>img/B_ELEPHANT.png</file>
+        <file>img/B_KING.png</file>
+        <file>img/B_KNIGHT.png</file>
+        <file>img/B_MANDARIN.png</file>
+        <file>img/board.jpg</file>
+        <file>img/B_PAWN.png</file>
+        <file>img/B_ROOK.png</file>
+        <file>img/R_CANNON.png</file>
+        <file>img/R_ELEPHANT.png</file>
+        <file>img/R_KING.png</file>
+        <file>img/R_KNIGHT.png</file>
+        <file>img/R_MANDARIN.png</file>
+        <file>img/R_PAWN.png</file>
+        <file>img/R_ROOK.png</file>
+        <file>img/select.png</file>
+        <file>img/loading.gif</file>
+    </qresource>
+</RCC>

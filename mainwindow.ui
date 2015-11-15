@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>920</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>920</width>
+    <height>640</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>方正黑体_GBK</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>BipedalBit象棋</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="ClickableLabel" name="label_board">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>600</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/board.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_B_ROOK1">
+    <property name="geometry">
+     <rect>
+      <x>59</x>
+      <y>30</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/B_ROOK.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_B_ROOK2">
+    <property name="geometry">
+     <rect>
+      <x>531</x>
+      <y>30</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/B_ROOK.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_B_KNIGHT1">
+    <property name="geometry">
+     <rect>
+      <x>118</x>
+      <y>30</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/B_KNIGHT.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_B_KNIGHT2">
+    <property name="geometry">
+     <rect>
+      <x>472</x>
+      <y>30</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/B_KNIGHT.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_B_ELEPHANT1">
+    <property name="geometry">
+     <rect>
+      <x>177</x>
+      <y>30</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/B_ELEPHANT.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_B_ELEPHANT2">
+    <property name="geometry">
+     <rect>
+      <x>413</x>
+      <y>30</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/B_ELEPHANT.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_B_MANDARIN1">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>30</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/B_MANDARIN.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_B_MANDARIN2">
+    <property name="geometry">
+     <rect>
+      <x>354</x>
+      <y>30</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/B_MANDARIN.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_B_KING">
+    <property name="geometry">
+     <rect>
+      <x>295</x>
+      <y>30</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/B_KING.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_B_CANNON1">
+    <property name="geometry">
+     <rect>
+      <x>118</x>
+      <y>148</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/B_CANNON.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_B_CANNON2">
+    <property name="geometry">
+     <rect>
+      <x>472</x>
+      <y>148</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/B_CANNON.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_B_PAWN1">
+    <property name="geometry">
+     <rect>
+      <x>59</x>
+      <y>207</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/B_PAWN.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_B_PAWN2">
+    <property name="geometry">
+     <rect>
+      <x>177</x>
+      <y>207</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/B_PAWN.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_B_PAWN3">
+    <property name="geometry">
+     <rect>
+      <x>295</x>
+      <y>207</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/B_PAWN.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_B_PAWN4">
+    <property name="geometry">
+     <rect>
+      <x>413</x>
+      <y>207</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/B_PAWN.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_B_PAWN5">
+    <property name="geometry">
+     <rect>
+      <x>531</x>
+      <y>207</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/B_PAWN.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_R_PAWN1">
+    <property name="geometry">
+     <rect>
+      <x>59</x>
+      <y>384</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/R_PAWN.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_R_PAWN2">
+    <property name="geometry">
+     <rect>
+      <x>177</x>
+      <y>384</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/R_PAWN.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_R_PAWN3">
+    <property name="geometry">
+     <rect>
+      <x>295</x>
+      <y>384</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/R_PAWN.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_R_PAWN4">
+    <property name="geometry">
+     <rect>
+      <x>413</x>
+      <y>384</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/R_PAWN.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_R_PAWN5">
+    <property name="geometry">
+     <rect>
+      <x>531</x>
+      <y>384</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/R_PAWN.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_R_CANNON1">
+    <property name="geometry">
+     <rect>
+      <x>118</x>
+      <y>443</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/R_CANNON.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_R_CANNON2">
+    <property name="geometry">
+     <rect>
+      <x>472</x>
+      <y>443</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/R_CANNON.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_R_ROOK1">
+    <property name="geometry">
+     <rect>
+      <x>59</x>
+      <y>561</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/R_ROOK.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_R_ROOK2">
+    <property name="geometry">
+     <rect>
+      <x>531</x>
+      <y>561</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/R_ROOK.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_R_KNIGHT1">
+    <property name="geometry">
+     <rect>
+      <x>118</x>
+      <y>561</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/R_KNIGHT.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_R_KNIGHT2">
+    <property name="geometry">
+     <rect>
+      <x>472</x>
+      <y>561</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/R_KNIGHT.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_R_ELEPHANT1">
+    <property name="geometry">
+     <rect>
+      <x>177</x>
+      <y>561</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/R_ELEPHANT.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_R_ELEPHANT2">
+    <property name="geometry">
+     <rect>
+      <x>413</x>
+      <y>561</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/R_ELEPHANT.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_R_MANDARIN1">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>561</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/R_MANDARIN.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_R_MANDARIN2">
+    <property name="geometry">
+     <rect>
+      <x>354</x>
+      <y>561</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/R_MANDARIN.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_R_KING">
+    <property name="geometry">
+     <rect>
+      <x>295</x>
+      <y>561</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/R_KING.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_select">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>23</y>
+      <width>64</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/select.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_first">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>40</y>
+      <width>61</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>先手</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>后手</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>40</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>先后手：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>80</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>最大搜索深度：</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_max_depth">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>80</y>
+      <width>50</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>120</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>搜索算法：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_algorithm">
+    <property name="geometry">
+     <rect>
+      <x>715</x>
+      <y>120</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Alpha Beta</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MTD(f)</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pushButton_back">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>160</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>后退</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_start">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>160</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>开始</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>270</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>评估结点数：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>310</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>搜索用时：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_search_cnt">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>270</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_search_time">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>310</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_first">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>40</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_searching">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>230</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_win">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>360</y>
+      <width>100</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label_board</zorder>
+   <zorder>label_select</zorder>
+   <zorder>label_B_ROOK1</zorder>
+   <zorder>label_B_ROOK2</zorder>
+   <zorder>label_B_KNIGHT1</zorder>
+   <zorder>label_B_KNIGHT2</zorder>
+   <zorder>label_B_ELEPHANT1</zorder>
+   <zorder>label_B_ELEPHANT2</zorder>
+   <zorder>label_B_MANDARIN1</zorder>
+   <zorder>label_B_MANDARIN2</zorder>
+   <zorder>label_B_KING</zorder>
+   <zorder>label_B_CANNON1</zorder>
+   <zorder>label_B_CANNON2</zorder>
+   <zorder>label_B_PAWN1</zorder>
+   <zorder>label_B_PAWN2</zorder>
+   <zorder>label_B_PAWN3</zorder>
+   <zorder>label_B_PAWN4</zorder>
+   <zorder>label_B_PAWN5</zorder>
+   <zorder>label_R_PAWN1</zorder>
+   <zorder>label_R_PAWN2</zorder>
+   <zorder>label_R_PAWN3</zorder>
+   <zorder>label_R_PAWN4</zorder>
+   <zorder>label_R_PAWN5</zorder>
+   <zorder>label_R_CANNON1</zorder>
+   <zorder>label_R_CANNON2</zorder>
+   <zorder>label_R_ROOK1</zorder>
+   <zorder>label_R_ROOK2</zorder>
+   <zorder>label_R_KNIGHT1</zorder>
+   <zorder>label_R_KNIGHT2</zorder>
+   <zorder>label_R_ELEPHANT1</zorder>
+   <zorder>label_R_ELEPHANT2</zorder>
+   <zorder>label_R_MANDARIN1</zorder>
+   <zorder>label_R_MANDARIN2</zorder>
+   <zorder>label_R_KING</zorder>
+   <zorder>comboBox_first</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>spinBox_max_depth</zorder>
+   <zorder>label_3</zorder>
+   <zorder>comboBox_algorithm</zorder>
+   <zorder>pushButton_back</zorder>
+   <zorder>pushButton_start</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_search_cnt</zorder>
+   <zorder>label_search_time</zorder>
+   <zorder>label_first</zorder>
+   <zorder>label_searching</zorder>
+   <zorder>label_win</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>ClickableLabel</class>
+   <extends>QLabel</extends>
+   <header>clickablelabel.h</header>
+   <slots>
+    <signal>clicked()</signal>
+    <signal>clicked(QPoint)</signal>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
